@@ -1,3 +1,12 @@
+/* 768px以下 */
+@media (max-width: 768px) {
+  .block {
+    display: flex;
+    width: calc(100% / 2);
+    padding: 10px;
+  }
+}
+
 /* 560px以下 */
 @media (max-width: 560px) {
   .header {
@@ -15,6 +24,12 @@
   }
   .header-right {
     width: 100%;
+  }
+
+  .days {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 }
 
@@ -47,6 +62,12 @@
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+  }
+
+  .block {
+    display: flex;
+    width: 100%;
+    padding: 10px;
   }
 }
 

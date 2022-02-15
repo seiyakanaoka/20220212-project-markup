@@ -11,6 +11,7 @@
   flex-direction: column;
 }
 
+/* ここからヘッダー */
 .header {
   width: 100%;
   display: flex;
@@ -62,6 +63,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  cursor: pointer;
 }
 
 .name-icon {
@@ -125,4 +127,84 @@
   position: absolute;
   top: 0;
   left: -8px;
+}
+
+/* ここから一覧内容 */
+
+.content {
+  width: 100%;
+  min-height: 40%;
+  padding: 32px;
+}
+
+.content-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
+  padding: 16px;
+  border: 1px solid #d0d0d0;
+}
+
+.content-list::after {
+  content: "";
+  display: block;
+  width: calc(100% / 3);
+}
+
+.block {
+  display: flex;
+  width: calc(100% / 3);
+  padding: 10px;
+}
+
+.block-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 16px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.block-content:hover {
+  box-shadow: 0 0 2px #000;
+}
+
+.headers {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.days {
+  display: flex;
+  gap: 12px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.day-title,
+.schedule-title {
+  font-size: 12px;
+}
+
+.day-content,
+.schedule-content {
+  font-size: 14px;
+  font-weight: bold;
 }
