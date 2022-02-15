@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ここからヘッダー */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #d0d0d0;
+  gap: 16px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  flex: 2;
+}
+
+.login-user {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.user-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-right: 4px;
+}
+
+.coming {
+  font-size: 12px;
+}
+
+.name {
+  background-color: transparent;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.name-area {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.name-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.add-icon {
+  width: 36px;
+  height: 36px;
+  fill: none;
+  stroke: #696969;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.header-right {
+  flex: 1;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  background-color: #fff;
+  padding: 6px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  box-shadow: 8px 8px 10px -10px rgb(0 0 0 / 20%);
+}
+
+.search-area:hover {
+  box-shadow: 10px 10px 10px -10px rgb(0 0 0 / 20%);
+}
+
+.search-text {
+  background-color: transparent;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+}
+
+.search-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  fill: #3879d9;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.search-icon::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background-color: #d0d0d0;
+  position: absolute;
+  top: 0;
+  left: -8px;
+}
+
+/* ここから内容 */
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+}
+
+.content-area {
+  display: flex;
+  gap: 16px;
+}
+
+.images {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  /* TODO: アップロードする時にトリミングしたい */
+}
+
+.detail {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-image {
+  width: 90px;
+  height: 60px;
+}
+
+.judge-area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.done {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.done-title {
+  font-size: 14px;
+}
+
+.done-content {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pass-area {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.pass {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pass-title {
+  font-size: 14px;
+}
+
+.pass-content {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.days {
+  display: flex;
+  gap: 24px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.day-title,
+.schedule-title {
+  font-size: 14px;
+}
+
+.day-content,
+.schedule-content {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.challenge {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.challenge-title {
+  font-size: 14px;
+}
+
+.challenge-content {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.score-content {
+  font-size: 16px;
+}
