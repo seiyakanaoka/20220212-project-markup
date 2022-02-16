@@ -1,0 +1,47 @@
+/* height 1368pz以上 */
+@media (min-height: 1368px) {
+  .content-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  .images {
+    width: 750px;
+    height: 750px;
+  }
+
+  .detail-header {
+    justify-content: center;
+  }
+
+  .header-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .header-image {
+    width: 120px;
+    height: 80px;
+  }
+}
+
+/* height 1024px以上 */
+@media (min-height: 1024px) {
+  .detail-header {
+    justify-content: center;
+  }
+
+  .header-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .header-image {
+    width: 120px;
+    height: 80px;
+  }
+}
