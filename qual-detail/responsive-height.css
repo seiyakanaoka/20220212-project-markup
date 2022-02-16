@@ -76,8 +76,8 @@
   }
 }
 
-/* height 1180px以上 */
-@media (min-height: 1180px) {
+/* height 1024px以上 */
+@media (min-height: 1024px) {
   .content-area {
     display: flex;
     flex-direction: column;
