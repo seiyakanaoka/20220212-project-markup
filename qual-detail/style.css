@@ -142,7 +142,7 @@
   /* TODO: アップロードする時にトリミングしたい */
 }
 
-.detail {
+.new {
   display: flex;
   gap: 16px;
   flex-direction: column;
@@ -150,7 +150,7 @@
   padding: 12px;
 }
 
-.detail-header {
+.new-header {
   display: flex;
   align-items: center;
   gap: 24px;
